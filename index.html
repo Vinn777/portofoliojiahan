@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio Jihan Alifa Nahda – Fresh Graduate SMK Telkom Lampung Rekayasa Perangkat Lunak." />
+  <title>Jihan Alifa Nahda Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ✦ Petals Canvas Removed -->
+
+  <!-- ✦ Cursor Custom -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ✦ Loader -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <div class="loader-rose">✧</div>
+      <p class="loader-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- ✦ Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="logo-script">Jihan Alifa Nahda</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link" id="nav-home">Beranda</a></li>
+      <li><a href="#about" class="nav-link" id="nav-about">Tentang</a></li>
+      <li><a href="#skills" class="nav-link" id="nav-skills">Keahlian</a></li>
+      <li><a href="#portfolio" class="nav-link" id="nav-portfolio">Karya</a></li>
+      <li><a href="#contact" class="nav-link" id="nav-contact">Kontak</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ✦ Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-greeting fade-up">Halo, saya</p>
+      <h1 class="hero-name fade-up">Jihan Alifa Nahda</h1>
+      <p class="hero-tagline fade-up">
+        <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc fade-up">
+        Menciptakan pengalaman digital yang minimalis, elegan, dan penuh makna
+      </p>
+      <div class="hero-buttons fade-up">
+        <a href="#portfolio" class="btn btn-primary" id="btn-lihat-karya">Lihat Karya</a>
+        <a href="#contact" class="btn btn-secondary" id="btn-hubungi">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-image-wrap fade-right">
+      <div class="hero-image-ring"></div>
+      <div class="hero-image-ring ring2"></div>
+      <img src="img/profile_new.png" alt="Jihan Profile" class="hero-img" id="heroProfileImg" />
+      <div class="hero-image-badge">
+        <span>✧ Creative</span>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ✦ About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Tentang Saya</p>
+        <h2 class="section-title">Kenali Lebih Dekat <span class="highlight">Jihan</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-col reveal-left">
+          <div class="about-image-card">
+            <img src="img/profile_new.png" alt="Jihan About" class="about-img" id="aboutProfileImg" />
+            <div class="about-image-accent"></div>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-count="2">0</span>
+                <span class="stat-label">Tahun<br />Pengalaman</span>
+              </div>
+              <div class="stat-divider">|</div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="2">0</span>
+                <span class="stat-label">Proyek<br />Selesai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col reveal-right">
+          <h3 class="about-subtitle">Fresh Graduate yang Bersemangat & Kreatif</h3>
+          <p class="about-desc">
+            Halo! Saya Jihan Alifa Nahda, fresh graduate dari SMK Telkom Lampung jurusan
+            Rekayasa Perangkat Lunak. Saya mencintai dunia teknologi dan desain, serta percaya
+            bahwa setiap baris kode bisa menjadi karya seni yang bermakna.
+          </p>
+          <p class="about-desc">
+            Dengan bekal ilmu di bidang pengembangan perangkat lunak, saya siap terjun ke
+            dunia profesional dengan penuh semangat, kreativitas, dan dedikasi untuk terus
+            belajar dan berkembang.
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Lampung, Indonesia</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <span>jihanalifa@email.com</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>SMK Telkom Lampung — RPL</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-heart"></i>
+              <span>Tersedia untuk Freelance & Magang</span>
+            </div>
+          </div>
+          <a href="#" class="btn btn-primary" id="btn-download-cv">
+            <i class="fas fa-download"></i> Unduh CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✦ Skills Section -->
+  <section class="skills" id="skills">
+    <div class="skills-bg-pattern"></div>
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Keahlian Saya</p>
+        <h2 class="section-title">Apa yang Saya <span class="highlight">Kuasai</span></h2>
+      </div>
+      <div class="skills-grid">
+        <!-- Design Card -->
+        <div class="skill-card reveal-up" id="skill-design">
+          <div class="skill-card-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Merancang antarmuka yang intuitif dan indah</p>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Figma</span><span>80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Canva </span><span>97%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="97"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Development Card -->
+        <div class="skill-card reveal-up" id="skill-dev" style="animation-delay: 0.15s">
+          <div class="skill-card-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Membangun website yang responsif dan modern</p>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>HTML/CSS</span><span>95%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>JavaScript</span><span>82%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="82"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photography Card -->
+        <div class="skill-card reveal-up" id="skill-photo" style="animation-delay: 0.3s">
+          <div class="skill-card-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h3>Photography</h3>
+          <p>Menangkap momen indah dalam setiap bingkai</p>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Fotografi</span><span>88%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>Canva</span><span>90%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-label">
+                <span>CapCut</span><span>80%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of skills-grid -->
+
+      <!-- Tools -->
+      <div class="tools-section reveal-up">
+        <p class="tools-label">Tools yang Saya Gunakan</p>
+        <div class="tools-list">
+          <div class="tool-badge" id="tool-1"><i class="fab fa-figma"></i> Figma</div>
+          <div class="tool-badge" id="tool-2"><i class="fab fa-html5"></i> HTML5</div>
+          <div class="tool-badge" id="tool-3"><i class="fab fa-css3-alt"></i> CSS3</div>
+          <div class="tool-badge" id="tool-4"><i class="fab fa-js-square"></i> JavaScript</div>
+          <div class="tool-badge" id="tool-6"><i class="fas fa-palette"></i> Canva</div>
+          <div class="tool-badge" id="tool-7"><i class="fab fa-github"></i> Github</div>
+          <div class="tool-badge" id="tool-8"><i class="fas fa-film"></i> CapCut</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ✦ Portfolio Section -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Karya Saya</p>
+        <h2 class="section-title">Koleksi <span class="highlight">Projek</span></h2>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1: Inventaris -->
+        <div class="portfolio-card reveal-up">
+          <div class="portfolio-img-wrap">
+            <img src="img/inventory_mockup.png" alt="Aplikasi Inventaris" class="portfolio-img-placeholder"
+              style="width: 100%; height: 100%; object-fit: cover;" />
+            <div class="portfolio-overlay">
+              <h4>Aplikasi Inventaris</h4>
+              <p>Manajemen Barang & Gudang</p>
+            </div>
+          </div>
+          <div class="portfolio-card-info">
+            <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+              <span
+                style="font-size: 0.7rem; padding: 0.2rem 0.6rem; background: var(--bg-card); border-radius: 20px; color: var(--text-main);">PHP</span>
+              <span
+                style="font-size: 0.7rem; padding: 0.2rem 0.6rem; background: var(--bg-card); border-radius: 20px; color: var(--text-main);">Web
+                Prototype</span>
+            </div>
+            <h4>Manajemen Inventaris</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 1rem;">Sistem
+              manajemen inventaris barang berbasis web untuk pencatatan dan pengelolaan stok.</p>
+            <div style="display: flex; gap: 0.5rem;">
+              <a href="https://github.com/jihanalifa/Inventaris-barang-Jihan" target="_blank" class="btn btn-secondary"
+                style="padding: 0.4rem 0.8rem; font-size: 0.8rem;"><i class="fab fa-github"></i> Kode</a>
+              <a href="#"
+                onclick="showInfoModal('Pemberitahuan', 'Maaf, aplikasi ini belum di-hosting ke publik (masih berupa Web Prototype lokal).'); return false;"
+                class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;"><i class="fas fa-eye"></i>
+                Lihat</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Android Constraint Layout -->
+        <div class="portfolio-card reveal-up" style="transition-delay: 0.1s;">
+          <div class="portfolio-img-wrap">
+            <img src="img/android_mockup.png" alt="Android UI Layout" class="portfolio-img-placeholder"
+              style="width: 100%; height: 100%; object-fit: cover;" />
+            <div class="portfolio-overlay">
+              <h4>Android UI Design</h4>
+              <p>Constraint Layout Explorer</p>
+            </div>
+          </div>
+          <div class="portfolio-card-info">
+            <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem; flex-wrap: wrap;">
+              <span
+                style="font-size: 0.7rem; padding: 0.2rem 0.6rem; background: var(--bg-card); border-radius: 20px; color: var(--text-main);">Java</span>
+              <span
+                style="font-size: 0.7rem; padding: 0.2rem 0.6rem; background: var(--bg-card); border-radius: 20px; color: var(--text-main);">Android
+                Studio</span>
+            </div>
+            <h4>Eksplorasi Constraint Layout</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 0.5rem; margin-bottom: 1rem;">Projek
+              pembelajaran Android native berfokus pada desain antarmuka fleksibel menggunakan Constraint Layout.</p>
+            <div style="display: flex; gap: 0.5rem;">
+              <a href="https://github.com/jihanalifa/Constrain_layout_AndroidStudio" target="_blank"
+                class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;"><i
+                  class="fab fa-github"></i> Kode</a>
+              <a href="#"
+                onclick="showInfoModal('Pemberitahuan', 'Maaf, aplikasi Android ini belum dipublikasikan ke Play Store (masih prototipe).'); return false;"
+                class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.8rem;"><i class="fas fa-eye"></i>
+                Lihat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✦ Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Hubungi Saya</p>
+        <h2 class="section-title">Mari <span class="highlight">Berkolaborasi</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Wujudkan Ide Anda Bersama Saya</h3>
+          <p>Saya selalu terbuka untuk proyek baru, peluang kolaborasi, atau sekadar berbincang tentang desain dan
+            kreativitas.</p>
+          <div class="contact-items">
+            <div class="contact-item" id="contact-location">
+              <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Lokasi</strong>
+                <span>Lampung, Indonesia</span>
+              </div>
+            </div>
+            <div class="contact-item contact-item-link" id="contact-email"
+              onclick="window.open('https://mail.google.com/mail/?view=cm&to=jihanjihan3137@gmail.com', '_blank')"
+              title="Kirim Email via Gmail">
+              <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email</strong>
+                <span>jihanjihan3137@gmail.com</span>
+              </div>
+            </div>
+            <div class="contact-item" id="contact-phone">
+              <div class="contact-item-icon"><i class="fab fa-whatsapp"></i></div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/6283179035591" target="_blank" style="color:inherit;text-decoration:none;">+62
+                  831-7903-5591</a>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://www.instagram.com/jihanalfnda?igsh=dWowczBuZjRmcGRv" target="_blank" class="social-link"
+              id="social-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/jihanalifa" target="_blank" class="social-link" id="social-github"
+              title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&to=jihanjihan3137@gmail.com"
+              target="_blank" class="social-link" id="social-email" title="Email"><i
+                class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/6283179035591" target="_blank" class="social-link" id="social-whatsapp"
+              title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input type="text" id="name" name="name" placeholder="Nama Anda" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@anda.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subjek</label>
+              <input type="text" id="subject" name="subject" placeholder="Tentang apa?" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ceritakan proyek Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✦ Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-logo">Jihan Alifa Nahda</p>
+      <p class="footer-tagline">Fresh Graduate RPL · SMK Telkom Lampung</p>
+      <div class="footer-links">
+        <a href="#home" id="footer-home">Beranda</a>
+        <a href="#about" id="footer-about">Tentang</a>
+        <a href="#portfolio" id="footer-portfolio">Karya</a>
+        <a href="#contact" id="footer-contact">Kontak</a>
+      </div>
+      <p class="footer-copy">© 2026 Jihan Alifa Nahda. Dibuat dengan semangat belajar.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ✦ Success Popup Modal -->
+  <div class="form-success-overlay" id="formSuccessOverlay">
+    <div class="form-success-modal">
+      <div class="success-icon-wrap">
+        <i class="fas fa-paper-plane success-fly-icon"></i>
+      </div>
+      <h4>Pesan Terkirim!</h4>
+      <p>Terima kasih telah menghubungi saya. Saya akan membalas segera ✧</p>
+      <button class="btn btn-primary" id="closeSuccessBtn" style="margin-top: 1.8rem;">Tutup</button>
+    </div>
+  </div>
+
+  <!-- ✦ Info Popup Modal -->
+  <div class="info-overlay" id="infoOverlay">
+    <div class="info-modal">
+      <div class="info-icon-wrap">
+        <i class="fas fa-info-circle info-pulse-icon"></i>
+      </div>
+      <h4 id="infoModalTitle">Informasi</h4>
+      <p id="infoModalText">Pesan</p>
+      <button class="btn btn-primary" id="closeInfoBtn" style="margin-top: 1.8rem;">Mengerti</button>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" title="Kembali ke atas">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "Fsti96zhGZPaCKdWi",
+      });
+    })();
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
