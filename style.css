@@ -312,7 +312,7 @@ input, textarea { font-family: inherit; }
   box-shadow: var(--shadow-med), 0 0 0 8px rgba(253,246,236,0.6);
 }
 .hero-image-badge {
-  position: absolute; bottom: 60px; left: -10px;
+  position: absolute;
   background: var(--white);
   border-radius: var(--radius-full);
   padding: 0.6rem 1.2rem;
@@ -322,7 +322,11 @@ input, textarea { font-family: inherit; }
   box-shadow: var(--shadow-soft);
   letter-spacing: 1px;
   animation: floatBadge 3s ease-in-out infinite;
+  z-index: 5;
 }
+.badge-1 { bottom: 60px; left: -10px; }
+.badge-2 { top: 70px; right: -30px; animation-delay: 0.7s; }
+.badge-3 { bottom: 130px; right: -40px; animation-delay: 1.4s; }
 @keyframes floatBadge {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-8px); }
