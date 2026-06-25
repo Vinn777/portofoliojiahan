@@ -129,7 +129,7 @@
             </div>
             <div class="detail-item">
               <i class="fas fa-envelope"></i>
-              <span>jihanalifa@email.com</span>
+              <span>jihanjihan3137@gmail.com</span>
             </div>
             <div class="detail-item">
               <i class="fas fa-graduation-cap"></i>
@@ -137,10 +137,14 @@
             </div>
             <div class="detail-item">
               <i class="fas fa-heart"></i>
-              <span>Tersedia untuk Freelance & Magang</span>
+              <span>Tersedia untuk Bekerja & Freelance</span>
             </div>
           </div>
-          <a href="#" class="btn btn-primary" id="btn-download-cv">
+          <a href="cv/CV-JIHAN%20ALIFA%20NAHDA%20%202.pdf"
+            download="CV-Jihan-Alifa-Nahda.pdf"
+            class="btn btn-primary"
+            id="btn-download-cv"
+            onclick="downloadCV(event)">
             <i class="fas fa-download"></i> Unduh CV
           </a>
         </div>
@@ -258,6 +262,85 @@
           <div class="tool-badge" id="tool-6"><i class="fas fa-palette"></i> Canva</div>
           <div class="tool-badge" id="tool-7"><i class="fab fa-github"></i> Github</div>
           <div class="tool-badge" id="tool-8"><i class="fas fa-film"></i> CapCut</div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="soft-skills-section reveal-up">
+        <p class="tools-label">Soft Skills</p>
+        <div class="soft-skills-grid">
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon"><i class="fas fa-users"></i></div>
+            <div class="soft-skill-info">
+              <span class="soft-skill-name">Kerja Sama Tim</span>
+              <div class="soft-skill-bar-track">
+                <div class="soft-skill-bar-fill" data-width="95"></div>
+              </div>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon"><i class="fas fa-comments"></i></div>
+            <div class="soft-skill-info">
+              <span class="soft-skill-name">Komunikasi Efektif</span>
+              <div class="soft-skill-bar-track">
+                <div class="soft-skill-bar-fill" data-width="90"></div>
+              </div>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon"><i class="fas fa-lightbulb"></i></div>
+            <div class="soft-skill-info">
+              <span class="soft-skill-name">Kreativitas</span>
+              <div class="soft-skill-bar-track">
+                <div class="soft-skill-bar-fill" data-width="92"></div>
+              </div>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon"><i class="fas fa-clock"></i></div>
+            <div class="soft-skill-info">
+              <span class="soft-skill-name">Manajemen Waktu</span>
+              <div class="soft-skill-bar-track">
+                <div class="soft-skill-bar-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon"><i class="fas fa-search"></i></div>
+            <div class="soft-skill-info">
+              <span class="soft-skill-name">Perhatian terhadap Detail</span>
+              <div class="soft-skill-bar-track">
+                <div class="soft-skill-bar-fill" data-width="93"></div>
+              </div>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+            <div class="soft-skill-info">
+              <span class="soft-skill-name">Problem Solving</span>
+              <div class="soft-skill-bar-track">
+                <div class="soft-skill-bar-fill" data-width="88"></div>
+              </div>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon"><i class="fas fa-seedling"></i></div>
+            <div class="soft-skill-info">
+              <span class="soft-skill-name">Kemauan Belajar</span>
+              <div class="soft-skill-bar-track">
+                <div class="soft-skill-bar-fill" data-width="98"></div>
+              </div>
+            </div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-skill-icon"><i class="fas fa-heart"></i></div>
+            <div class="soft-skill-info">
+              <span class="soft-skill-name">Empati & Kepedulian</span>
+              <div class="soft-skill-bar-track">
+                <div class="soft-skill-bar-fill" data-width="96"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -385,9 +468,8 @@
               id="social-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://github.com/jihanalifa" target="_blank" class="social-link" id="social-github"
               title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://mail.google.com/mail/?view=cm&to=jihanjihan3137@gmail.com"
-              target="_blank" class="social-link" id="social-email" title="Email"><i
-                class="fas fa-envelope"></i></a>
+            <a href="https://mail.google.com/mail/?view=cm&to=jihanjihan3137@gmail.com" target="_blank"
+              class="social-link" id="social-email" title="Email"><i class="fas fa-envelope"></i></a>
             <a href="https://wa.me/6283179035591" target="_blank" class="social-link" id="social-whatsapp"
               title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
@@ -467,7 +549,7 @@
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script type="text/javascript">
-    (function(){
+    (function () {
       emailjs.init({
         publicKey: "Fsti96zhGZPaCKdWi",
       });

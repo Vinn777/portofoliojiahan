@@ -117,11 +117,9 @@ function updateActiveLink() {
 function initTyped() {
   const el = document.getElementById('typedText');
   const phrases = [
-    'Web Developer',
     'Fresh Graduate RPL',
     'UI/UX Enthusiast',
     'Software Engineer',
-    'Creative Coder',
   ];
   let phraseIdx = 0, charIdx = 0, isDeleting = false;
 
@@ -166,7 +164,7 @@ function initScrollReveal() {
 
 // ── Skill Bars ─────────────────────────────────────────────
 function initSkillBars() {
-  const bars = document.querySelectorAll('.skill-bar-fill');
+  const bars = document.querySelectorAll('.skill-bar-fill, .soft-skill-bar-fill');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -371,4 +369,14 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
+// ── CV Download ────────────────────────────────────────────
+window.downloadCV = function(e) {
+  e.preventDefault();
+  const link = document.createElement('a');
+  link.href = 'cv/CV-JIHAN%20ALIFA%20NAHDA%20%202.pdf';
+  link.download = 'CV-Jihan-Alifa-Nahda.pdf';
+  link.target = '_blank';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};

@@ -608,6 +608,71 @@ section { padding: 7rem 0; position: relative; z-index: 2; }
 .tool-badge i { font-size: 1rem; }
 .tool-badge .custom-icon { transition: var(--transition); }
 
+/* ── Soft Skills ────────────────────────────────────────── */
+.soft-skills-section {
+  text-align: center;
+  margin-top: 3rem;
+}
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: left;
+}
+.soft-skill-item {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1.2rem;
+  box-shadow: var(--shadow-soft);
+  border: var(--border-soft);
+  transition: var(--transition);
+}
+.soft-skill-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-med);
+}
+.soft-skill-icon {
+  width: 38px; height: 38px;
+  background: var(--rose-pale);
+  border-radius: var(--radius-md);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--rose-dark);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+.soft-skill-item:hover .soft-skill-icon {
+  background: var(--rose-dark);
+  color: var(--white);
+}
+.soft-skill-info { flex: 1; }
+.soft-skill-name {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-main);
+  margin-bottom: 0.35rem;
+}
+.soft-skill-bar-track {
+  height: 4px;
+  background: var(--rose-pale);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+.soft-skill-bar-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, var(--rose-dark), var(--gold));
+  border-radius: var(--radius-full);
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 /* ── Portfolio Section ──────────────────────────────────── */
 .portfolio {
   background: linear-gradient(180deg, var(--cream-dark) 0%, var(--cream) 100%);
